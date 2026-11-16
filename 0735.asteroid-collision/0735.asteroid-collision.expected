@@ -1,6 +1,7 @@
 # One expected value per test case. Delete lines to skip checking.
 # Prefilled from the problem statement. Correct them if they look wrong.
-[5,10]
+-2,-1,1,2
 []
+[5,10]
 [10]
 [-6,2,4]
