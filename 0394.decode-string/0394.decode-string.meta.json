@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "slug": "decode-string",
+  "questionId": "394",
+  "frontendId": "394",
+  "title": "Decode String",
+  "difficulty": "Medium",
+  "languages": [
+    "c",
+    "cpp",
+    "csharp",
+    "dart",
+    "elixir",
+    "erlang",
+    "golang",
+    "java",
+    "javascript",
+    "kotlin",
+    "php",
+    "python",
+    "python3",
+    "racket",
+    "ruby",
+    "rust",
+    "scala",
+    "swift",
+    "typescript"
+  ],
+  "metaData": {
+    "name": "decodeString",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "return": {
+      "type": "string"
+    }
+  },
+  "fetchedAt": "2026-11-16T16:59:19.444Z"
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "slug": "asteroid-collision",
+  "questionId": "735",
+  "frontendId": "735",
+  "title": "Asteroid Collision",
+  "difficulty": "Medium",
+  "languages": [
+    "c",
+    "cpp",
+    "csharp",
+    "dart",
+    "elixir",
+    "erlang",
+    "golang",
+    "java",
+    "javascript",
+    "kotlin",
+    "php",
+    "python",
+    "python3",
+    "racket",
+    "ruby",
+    "rust",
+    "scala",
+    "swift",
+    "typescript"
+  ],
+  "metaData": {
+    "name": "asteroidCollision",
+    "params": [
+      {
+        "name": "asteroids",
+        "type": "integer[]"
+      }
+    ],
+    "return": {
+      "type": "integer[]"
+    }
+  },
+  "fetchedAt": "2026-11-16T17:01:20.236Z"
+}
