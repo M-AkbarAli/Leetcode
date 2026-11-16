@@ -24,21 +24,23 @@ class Solution:
         asteroidStack = []
 
         for currAsteroid in asteroids:
-            if currAsteroid < 0:
-                while asteroidStack and asteroidStack[-1] > 0:
-                    if abs(currAsteroid) > abs(asteroidStack[-1]): #remove stop on stack.
-                        asteroidStack.pop()
-                        
-                        if not asteroidStack:
-                            asteroidStack.append(currAsteroid)
-                            break
-                    elif abs(currAsteroid) == abs(asteroidStack[-1]): # if same remove both
-                        asteroidStack.pop()
-                        break
-                    else: #onto next iteration
-                        break
-            else:
-                asteroidStack.append(currAsteroid)
+            survived = True
 
+            while asteroidStack and asteroidStack[-1] > 0 and currAsteroid < 0:
+
+                if asteroidStack[-1] < abs(currAsteroid):
+                    asteroidStack.pop()
+
+                elif asteroidStack[-1] == abs(currAsteroid):
+                    asteroidStack.pop()
+                    survived = False
+                    break
+
+                else:
+                    survived = False
+                    break
+
+            if survived:
+                asteroidStack.append(currAsteroid)
 
         return asteroidStack
