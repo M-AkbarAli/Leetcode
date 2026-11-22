@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "slug": "binary-search",
+  "questionId": "792",
+  "frontendId": "704",
+  "title": "Binary Search",
+  "difficulty": "Easy",
+  "languages": [
+    "c",
+    "cpp",
+    "csharp",
+    "dart",
+    "elixir",
+    "erlang",
+    "golang",
+    "java",
+    "javascript",
+    "kotlin",
+    "php",
+    "python",
+    "python3",
+    "racket",
+    "ruby",
+    "rust",
+    "scala",
+    "swift",
+    "typescript"
+  ],
+  "metaData": {
+    "name": "search",
+    "params": [
+      {
+        "name": "nums",
+        "type": "integer[]"
+      },
+      {
+        "name": "target",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "integer"
+    }
+  },
+  "fetchedAt": "2026-11-22T21:34:35.889Z"
+}
