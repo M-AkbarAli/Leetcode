@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "slug": "search-a-2d-matrix",
+  "questionId": "74",
+  "frontendId": "74",
+  "title": "Search a 2D Matrix",
+  "difficulty": "Medium",
+  "languages": [
+    "c",
+    "cpp",
+    "csharp",
+    "dart",
+    "elixir",
+    "erlang",
+    "golang",
+    "java",
+    "javascript",
+    "kotlin",
+    "php",
+    "python",
+    "python3",
+    "racket",
+    "ruby",
+    "rust",
+    "scala",
+    "swift",
+    "typescript"
+  ],
+  "metaData": {
+    "name": "searchMatrix",
+    "params": [
+      {
+        "name": "matrix",
+        "type": "integer[][]"
+      },
+      {
+        "name": "target",
+        "type": "integer"
+      }
+    ],
+    "return": {
+      "type": "boolean"
+    }
+  },
+  "fetchedAt": "2026-11-23T00:53:58.511Z"
+}
