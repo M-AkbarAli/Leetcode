@@ -4,27 +4,37 @@
 class Solution:
     def searchMatrix(self, matrix: list[list[int]], target: int) -> bool:
 
-        #input: m*n matrix, given in 2nd array form.
-        #output: bool, repersents wheter target in matrix or not.
-        #Time: O(log(m*n)) -> can do logn checks on every row of the matrix. m is columns, n is rows.
-        #No space limit.
-        
-        #Algo 1: Nested binary search.
-        # narrow it down to which row to inspect. 
-        # want target > l, and r > target. 
-        # l = 1, r = 23.  target > l -> 
-        # 
+        #Algo:
+        # lo = m[0] , high = len(matrix) -1           // hurdle one, how to dynamically find rows in a matrix.
+        # hi >= lo
+        # mid = hi + low / 2.
+        # if target > mid, lo = mid + 1
+        # if target < mid, hi = mid - 1.
+        # if target is in row of mid, then BST. 
 
-        #what do i need: to get l and r to be the end and start of a row, so i can BST that row only.
-        # so i need target to be in the middle of l and r, so l < t < r.
-        
-        # mid index? not useful here, need to compare the start and ends. 
-        #compare to full row values, so if greater than 7, but less than 60, 
-        #move r untill less than target. loop cond? while val r > val l. 
-        # if r > target, 
+        lo = 0
+        hi = len(matrix) - 1
 
-        #use middle row
-        #set l to 10, and r to 20. 
-        #if target > l, and r > target and first index of r == l?
+        while hi >= lo:
+            mid = (hi + lo) // 2
+            a = matrix[mid][0]
+            b = matrix[mid][len(matrix[mid])- 1]
+            
+            if a <= target <= b:
+                l = 0
+                r = len(matrix[mid])- 1
+                middle = (r + l) // 2
+                while r >= l:
+                    if target == matrix[mid][middle]:
+                        return True
+                    elif target > matrix[mid][middle]:
+                        l = middle + 1
+                    else:
+                        r = middle - 1
+            elif target > b:
+                lo = mid + 1
+            else:
+                hi = mid - 1
 
-        return True
+
+        return False
